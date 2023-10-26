@@ -7,6 +7,9 @@ from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
+      """ LRUCache define a LRU algorithm to use cache
+      """
+
     def __init__(self):
         """ Initiliaze
         """
