@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 ''' LRU Caching: Create a class LRUCache that inherits from BaseCaching
-                 and is a caching system
-    You can overload def __init__(self): but don’t forget to call the parent init: super().__init__()
+and is a caching system You can overload def __init__(self): but don’t
+forget to call the parent init: super().__init__()
 def put(self, key, item):
 Must assign to the dictionary self.cache_data the item value for the key key.
 If key or item is None, this method should not do anything.
@@ -34,7 +34,7 @@ class LRUCache(BaseCaching):
         ''' Add key/value pair to cache data.
             If cache is at max capacity (specified by BaseCaching.MAX_ITEMS),
             discard least recently used entry in cache to accommodate new
-            entry. 
+            entry.
         '''
         if key is not None and item is not None:
             self.cache_data[key] = item
@@ -54,4 +54,3 @@ class LRUCache(BaseCaching):
             self.keys.append(self.keys.pop(self.keys.index(key)))
             return self.cache_data[key]
         return None
-
