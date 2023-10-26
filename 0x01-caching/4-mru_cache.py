@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Create a class MRUCache that inherits
-from BaseCaching 
+from BaseCaching
 """
 
 
@@ -46,4 +46,3 @@ class MRUCache(BaseCaching):
             self.usedKeys.append(self.usedKeys.pop(self.usedKeys.index(key)))
             return self.cache_data.get(key)
         return None
-
